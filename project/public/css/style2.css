@@ -1,0 +1,508 @@
+.fa-user-circle-o
+{
+  font-size: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
+}
+.nav
+{
+  margin-right: 0%;
+}
+.dropdown
+{
+  align-items: center;
+  margin-right: 5px;
+}
+.p-log-button {
+  padding: 6px 24px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.c-log-button {
+  padding: 6px 24px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.p-log-button:active {
+  transform: scale(0.98);
+}
+.c-log-button:active {
+  transform: scale(0.98);
+}
+/* Home */
+.slidd{
+  position: relative;
+}
+.sliddd{
+  position:absolute;
+}
+.slid::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+.sliddd::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+.slidd.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sliddd.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+.slidd::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+.slid.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+  /* From */
+  .profession-form_container {
+    position: fixed;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+  }
+  .customer-form_container {
+    position: fixed;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+  }
+  .reg-container
+  {
+   
+    border-radius: 12px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 70%;
+   height: 80%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+  } 
+   .slid.show .profession-form_container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .slidd.show .reg-container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .sliddd.showw .customer-form_container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .signup_form {
+  display: none;
+  }
+  .profession-form_container.active .signup_form {
+  display:block
+  }
+  .profession-form_container.active .login_form {
+    display: none;
+ 
+
+  }
+  
+  .customer-signup_form {
+    display:none;
+    }
+    .customer-form_container.active .customer-signup_form {
+    display:block
+    }
+    .customer-form_container.active .customer-login_form {
+      display: none;
+   
+    }
+  .form_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .form_closee {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .form_closeee {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .profession-form_container h2 {
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+  }
+  .customer-form_container h2 {
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+  }
+  .profession-input_box {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+  }
+  .customer-input_box {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+  }
+  .profession-input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+  }
+  .customer-input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+  }
+  .profession-input_box input:focus {
+    border-color: #7d2ae8;
+  }
+  .customer-input_box input:focus {
+    border-color: #7d2ae8;
+  }
+  .profession-input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #707070;
+  }
+  .customer-input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #707070;
+  }
+  .profession-input_box i.email,
+  .profession-input_box i.password {
+    left: 0;
+  }
+  .customer-input_box i.email,
+  .customer-input_box i.password {
+    left: 0;
+  }
+  .profession-input_box input:focus ~ i.email,
+  .profession-input_box input:focus ~ i.password {
+    color: #d64022;
+  }
+  .customer-input_box input:focus ~ i.email,
+  .customer-input_box input:focus ~ i.password {
+    color: #d64022;
+  }
+  .profession-input_box i.pw_hide {
+    right: 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .customer-input_box i.pw_hide {
+    right: 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .profession-form_container a {
+  color: #d64022;
+    font-size: 12px;
+  }
+  .customer-form_container a {
+    color: #d64022;
+      font-size: 12px;
+    }
+  .reg-container a:hover {
+    text-decoration: underline;
+    color: #d64022;
+  }
+  .reg-container a {
+    color: #d64022;
+      font-size: 12px;
+    }
+    .profession-form_container a:hover {
+      text-decoration: underline;
+      color: #d64022;
+    }
+    .customer-form_container a:hover {
+      text-decoration: underline;
+      color: #d64022;
+    }
+
+  .profession-form_container .p-log-button {
+    background-color: #d64022;
+    color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  .customer-form_container .c-log-button {
+    background-color: #d64022;
+    color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  .reg-container .p-log-button {
+    
+    background-color: #d64022;
+    color: #fff;
+    margin-top: 10px;
+    width: 70%;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  .login_signup {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .customer-login_signup {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .notification
+  {
+    margin: 20px;
+    margin-bottom: 10;
+  }
+  .chatnow
+  {
+    align-items: end;
+  }
+  .notif-text
+  {
+    margin-left: 30px;
+  }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .formbold-mb-5 {
+        margin-bottom: 20px;
+      }
+      .formbold-pt-3 {
+        padding-top: 12px;
+      }
+      .formbold-main-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+    
+      .formbold-form-wrapper {
+        margin: 0 auto;
+        max-width: 550px;
+        width: 100%;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        display:block;
+      }
+    
+
+      .formbold-form-label {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        color: #d64022;
+        margin-bottom: 12px;
+      }
+      .formbold-form-label-2 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    
+      .formbold-form-input {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        background: white;
+        font-weight: 500;
+        font-size: 16px;
+        color: #6b7280;
+        outline: none;
+        resize: none;
+      }
+      .formbold-form-input:focus {
+        border-color: #d64022;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+      }
+    
+      .formbold-btn {
+        text-align: center;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 14px 32px;
+        border: none;
+        font-weight: 600;
+        background-color: #d64022;
+        color: white;
+        cursor: pointer;
+      }
+      .formbold-btn:hover {
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+      }
+    
+      .formbold--mx-3 {
+        margin-left: -12px;
+        margin-right: -12px;
+      }
+      .formbold-px-3 {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .formbold-form-header {
+        background:#d64022;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 36px;
+        border-radius: 8px 8px 0px 0px;
+      }
+      .formbold-form-header h3 {
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+      }
+      .formbold-form-header button {
+        color: white;
+        background: transparent;
+        border: none;
+      }
+      .formbold-chatbox-form {
+        padding: 32px 36px;
+      }
+      .formbold-action-buttons {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 48px;
+      }
+      .formbold-action-btn {
+        width: 70px;
+        height: 70px;
+        background:#d64022;
+        color: white;
+        border-radius: 50%;
+        margin-left: 20px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .formbold-action-btn .formbold-cross-icon {
+        display: none;
+      }
+    
+      .formbold-action-btn.active .formbold-cross-icon {
+        display: block;
+      }
+    
+      .formbold-action-btn.active .formbold-chat-icon {
+        display: none;
+      }
+      @media (min-width: 540px) {
+        .sm\:w-half {
+          width: 50%;
+        }
+      }
+

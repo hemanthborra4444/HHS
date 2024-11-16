@@ -1,0 +1,72 @@
+<%-include("partials/header.ejs")-%>
+<body class="book-body">
+  
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">SkillConnect</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/#services">Services</a>
+               
+              </li>
+              
+            
+              </ul>
+              
+              <a href="/book"class="btn btn-brand ms-lg-3"  >BOOK NOW</a>
+              <div class="btn-group dropdown">
+              
+                <a href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><%= user %></a></li>
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                 
+                </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+                   
+                      <div class="row cards-rows">
+                        <% for(var i=0;i<item.length;i++){%>
+                        <div class="col-md-4">
+                            <div class="card mycard mb-4 box-shadow">
+                              <img src="img/<%=item[i].profession%>.jpeg" class="card-img-top" alt="Thumbnail [100%x225]"  style="height: 225px; width: 100%; display: block;">
+                              <div class="card-body">
+                                <p class="card-text">Name : <%=item[i].name%><br>
+                                  
+                                    Profession : <%=item[i].profession %><br>
+                                    price :<%=item[i].price%> Rs <br>
+                                    Gender:<%=item[i].gender%>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form">
+                                    <form action="/phn" method="post">
+                                        <input type="hidden"  name="workerId" value="<%=item[i].username %>">
+                                            <input type="text" name="mobile" placeholder="Enter mobile number" required />
+                                            
+                                        <button type="submit" class="btn btn-brand ms-lg-3">Book Now</button>
+                                    
+                                    </form>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <%}%>
+                        </div>
+                <%-include("partials/footer.ejs")-%>

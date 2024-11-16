@@ -1,0 +1,423 @@
+<%-include("partials/header.ejs")-%>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SkillConnect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                 
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                </ul>
+                
+                <button class="btn btn-brand ms-lg-3"    id="form-open">Register as professional </button>
+            
+                <button class="btn btn-brand ms-lg-3"    id="loginnbtn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+   
+<div class="sliddd">
+  <div class="customer-form_container">
+    <i class="uil uil-times form_closeee"></i>
+    <!-- Login From -->
+    <div class="form customer-login_form">
+      <form  action="/customer-login" method="post">
+        <h2>Login</h2>
+        <div class="customer-input_box">
+          <input type="text"  name="username" placeholder="Enter your userid" required />
+          <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="customer-input_box">
+          <input type="password" name="password" placeholder="Enter your password" required />
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+        <button type="submit"class="c-log-button">Login Now</button>
+        <div class="customer-login_signup">Don't have an account? <a href="#" id="cus-signup">Signup</a></div>
+      </form>
+        
+
+       </div>
+        <div class="form customer-signup_form">
+          <form action="/customer-register" method="post">
+            <h2>Signup</h2>
+            <div class="customer-input_box">
+              <input type="text" name="username" placeholder="Enter your userid" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="customer-input_box">
+              <input type="password" name="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            
+            <button type="submit" class="c-log-button">Signup Now</button>
+            <div class="customer-login_signup">Already have an account? <a href="#" id="cus-login">Login</a></div>
+          </form>
+        </div>
+      </div>
+  
+    </div>
+    <!-- SLIDER -->
+   <div class="slid">
+    <div class="profession-form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="/prof-log" method="post">
+            <h2>Login</h2>
+            <div class="profession-input_box">
+              <input type="text" name="userid" placeholder="Enter your userid" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="profession-input_box">
+              <input type="password" name="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            
+            <button type="submit" class="p-log-button">Login Now</button>
+            <div class="profession-login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+             <!-- Signup From -->
+          </div>  </div>
+          <div class="slidd">
+          <div class="container reg-container py-5 h-100">
+            <div class="row justify-content-center reg-rows align-items-center h-100">
+              <div class="col-12 col-lg-11 col-xl-10">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;margin-top:2px">
+                  <div class="card-body p-1 p-md-4">
+                   <center><h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Register Here</h3></center> 
+       
+          <form class="registration-form" action="/prof-register" method="post"> 
+            <i class="uil uil-times form_close form_closee"></i>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+
+                <div class="form-outline">
+                  <input type="text" name="username" id="username" class="form-control form-control-lg" />
+                  <label class="form-label" for="username">Userid</label>
+                </div>
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="password" name="password" id="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+  
+                </div>
+              
+              
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" name="name" id="Name" class="form-control form-control-lg" />
+                    <label class="form-label" for="Name">Name</label>
+                  </div>
+  
+                </div>
+              <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                <div class="form-outline datepicker w-100">
+                  <input type="text" name="price" class="form-control form-control-lg" id="birthdayDate" />
+                  <label for="birthdayDate" class="form-label">price</label>
+                </div>
+
+              </div>
+              </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+
+                    <select class="select form-control-lg" name="profession">
+                      <option value="Choose">Choose</option>
+                      <option value="Electrician">Electrician</option>
+                      <option value="Plumber">Plumber</option>
+                      <option value="Labour">Labour</option>
+                      <option value="Carpenter">Carpenter</option>
+                      <option value="Driver">Driver</option>
+                      <option value="Cook">Cook</option>
+                      <option value="Cleaning">Cleaning</option>
+                      <option value="Painter">Painter</option>
+                    </select>
+                    <br>
+                    <label class="form-label select-label"> Profession</label>
+</div>
+
+              
+              <div class="col-md-6 mb-4">
+
+                <h6 class="mb-2 pb-1">Gender: </h6>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                    value="female" checked />
+                  <label class="form-check-label" for="femaleGender">Female</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="maleGender"
+                    value="male" />
+                  <label class="form-check-label" for="maleGender">Male</label>
+                </div>
+
+              </div>
+            </div>
+
+          
+
+
+          <center>  <button type="submit"class="p-log-button">Signup</button></center>
+           
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+          </div>
+          </div>
+          </div>
+        </div>
+        </div>
+          </div>
+    <div class="owl-carousel owl-theme hero-slider ">
+       
+         
+    
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h6 class="text-white text-uppercase">Quality home services, on demand</h6>
+                        <h1 class="display-3 my-4">Experienced,<br />hand picked Professionals</h1>
+                        <a href="/" class="btn btn-brand">Get Started</a>
+                        <a href="#services" class="btn btn-outline-light ms-3">Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                        <h6 class="text-white text-uppercase">Smart Way Easy Life...</h6>
+                        <h1 class="display-3 my-4">Expert in Serivce.
+
+<br />Repair. Maintenance.</h1>
+                        <a href="/" class="btn btn-brand">Get Started</a>
+                        <a href="#services" class="btn btn-outline-light ms-3" >Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Transparent Pricing</h5>
+                                    <p>See fixed prices before you book. No hidden charges.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2cc7d0d0.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Experts only</h5>
+                                    <p>Our professionals are well trained and have on-job expertise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2caafa00.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Fully equipped</h5>
+                                    <p>We bring everything needed to get the job done well.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/h3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MILESTONE -->
+    <section id="milestone">
+        <div class="container">
+            <div class="row text-center justify-content-center gy-4">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4"><%=clients%></h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <!-- <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">45M</h1>
+                    <p class="mb-0">Lines of code</p>
+                </div> -->
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">8</h1>
+                    <p class="mb-0">Total Services</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">1+</h1>
+                    <p class="mb-0">Years Of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Our Services</h6>
+                        <h1>What We Do?</h1>
+                        <p class="mx-auto">Company works with homeowners, contractors, realtors, and residential building managers to help maintain, upgrade, and repair properties</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service">
+                        <img src="img/h21.png" alt="">
+                        <h5>Painting</h5>
+                        <p>Transform your living spaces with skilled painters from our platform, adding a splash of creativity and finesse to your walls.
+
+</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <img src="img/h22.png" alt="">
+                        <h5>Electrical</h5>
+                        <p>Connecting you to certified electricians, providing swift and dependable service to brighten up your home or business.
+
+</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <img src="img/h23.png" alt="">
+                        <h5>Repair</h5>
+                        <p>We'll send a multi-skilled repairman to your residential or commercial property so you save the time and...
+
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  <section class="bg-light" id="reviews">
+    <div class="row reviewform">
+      <div class="col-5"><div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="w-full">
+          <div class="formbold-form-wrapper">
+            <div class="formbold-form-header">
+              <h3>Let's give review</h3>
+             
+            </div>
+            <form
+              action="/reviewform"
+              method="POST"
+              class="formbold-chatbox-form"
+            >
+              <div class="formbold-mb-5">
+                <label for="name" class="formbold-form-label"> Your Name </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                  class="formbold-form-input"
+                />
+              </div>
+      
+      
+              <div class="formbold-mb-5">
+                <label for="message" class="formbold-form-label"> Message </label>
+                <textarea
+                  rows="6"
+                  name="message"
+                  id="message"
+                  placeholder="Explain you queries"
+                  class="formbold-form-input"
+                ></textarea>
+              </div>
+      
+              <div>
+                <button class="formbold-btn w-full">Submit</button>
+              </div>
+            </form>
+          </div>
+       
+        </div>
+      </div>
+     </div>
+      <div class="col-7"> <div class="owl-theme owl-carousel reviews-slider container">
+        <% for(var i=0;i<item.length;i++){%>
+        <div class="review">
+            <div class="person">
+                <img src="img/b2.jpeg" alt="">
+                <h5><%=item[i].name %></h5>
+               
+            </div>
+            <h3><%= item[i].text %></h3>
+            
+            <i class='bx bxs-quote-alt-left'></i>
+        </div>
+        
+           
+        <%}%>
+  </div></div>
+  </div>
+    
+     
+  
+  </section>
+  
+    <%-include("partials/footer.ejs")-%>
+    

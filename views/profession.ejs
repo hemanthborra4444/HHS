@@ -1,0 +1,192 @@
+<%-include("partials/header.ejs")-%>
+<body>
+  
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">SkillConnect</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/#services">Services</a>
+               
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link" href="/notifications">Notifications</a>
+
+              </li>
+              </ul>
+              <div class="btn-group dropdown">
+              
+                <a href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><%= user %></a></li>
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                 
+                </ul>
+              </div>
+              
+          </div>
+      </div>
+  </nav>
+   
+  <div class="owl-carousel owl-theme hero-slider ">
+       
+         
+    
+    <div class="slide slide1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <h6 class="text-white text-uppercase">Quality home services, on demand</h6>
+                    <h1 class="display-3 my-4">Experienced,<br />hand picked Professionals</h1>
+                    <a href="/profession" class="btn btn-brand">Get Started</a>
+                    <a href="#services" class="btn btn-outline-light ms-3">Our work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                    <h6 class="text-white text-uppercase">Smart Way Easy Life...</h6>
+                    <h1 class="display-3 my-4">Expert in Serivce.
+
+<br />Repair. Maintenance.</h1>
+                    <a href="/profession" class="btn btn-brand">Get Started</a>
+                    <a href="#services" class="btn btn-outline-light ms-3" >Our work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 py-5">
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="info-box">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png" alt="">
+                            <div class="ms-4">
+                                <h5>Transparent Pricing</h5>
+                                <p>See fixed prices before you book. No hidden charges.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="info-box">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2cc7d0d0.png" alt="">
+                            <div class="ms-4">
+                                <h5>Experts only</h5>
+                                <p>Our professionals are well trained and have on-job expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="info-box">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2caafa00.png" alt="">
+                            <div class="ms-4">
+                                <h5>Fully equipped</h5>
+                                <p>We bring everything needed to get the job done well.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="img/h3.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MILESTONE -->
+<section id="milestone">
+    <div class="container">
+        <div class="row text-center justify-content-center gy-4">
+            <div class="col-lg-2 col-sm-6">
+                <h1 class="display-4"><%=clients%></h1>
+                <p class="mb-0">Happy Clients</p>
+            </div>
+            <!-- <div class="col-lg-2 col-sm-6">
+                <h1 class="display-4">45M</h1>
+                <p class="mb-0">Lines of code</p>
+            </div> -->
+            <div class="col-lg-2 col-sm-6">
+                <h1 class="display-4">8</h1>
+                <p class="mb-0">Total Services</p>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <h1 class="display-4">1+</h1>
+                <p class="mb-0">Years Of Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="intro">
+                    <h6>Our Services</h6>
+                    <h1>What We Do?</h1>
+                    <p class="mx-auto">Company works with homeowners, contractors, realtors, and residential building managers to help maintain, upgrade, and repair properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service">
+                    <img src="img/h21.png" alt="">
+                    <h5>Painting</h5>
+                    <p>Transform your living spaces with skilled painters from our platform, adding a splash of creativity and finesse to your walls.
+
+</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service">
+                    <img src="img/h22.png" alt="">
+                    <h5>Electrical</h5>
+                    <p>Connecting you to certified electricians, providing swift and dependable service to brighten up your home or business.
+
+</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service">
+                    <img src="img/h23.png" alt="">
+                    <h5>Repair</h5>
+                    <p>We'll send a multi-skilled repairman to your residential or commercial property so you save the time and...
+
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<%-include("partials/footer.ejs")-%>
